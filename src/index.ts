@@ -22,8 +22,6 @@ createConnection().then(async connection => {
                 result.then(result => result !== null && result !== undefined ? res.send(result) : undefined);
 
             } else if (result !== null && result !== undefined) {
-                console.log(res)
-                console.log(result)
                 res.json(result);
             }
         });

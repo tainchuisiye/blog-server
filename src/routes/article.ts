@@ -1,24 +1,28 @@
-import {ArticleController} from "../controller/ArticleController";
+import { ArticleController } from "../controller/ArticleController";
 
-export default [{
+export default [
+  {
     method: "post",
-    route: "/article",
+    route: "/article/update",
     controller: ArticleController,
     action: "save"
-}, {
+  },
+  {
     method: "get",
     route: "/article/list",
     controller: ArticleController,
     action: "find"
-}, {
+  },
+  {
     method: "get",
-    route: "/article/:id",
+    route: "/article/findById",
     controller: ArticleController,
-    action: "findByID"
-}, {
+    action: "findById"
+  },
+  {
     method: "delete",
-    
     route: "/users",
     controller: ArticleController,
-    action: "remove"
-}];
+    action: "removeById"
+  }
+];

@@ -26,7 +26,7 @@ export class Article {
   @Column({ nullable: true })
   author: string
  
-  @Column({ nullable: true })
+  @Column({ nullable: true, type:'text' })
   content: string
 
   @CreateDateColumn()

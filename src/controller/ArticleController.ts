@@ -13,8 +13,8 @@ export class ArticleController {
     return this.ArticleRepository.find()
   }
 
-  async findByID(request: Request, response: Response, next: NextFunction) {
-    return this.ArticleRepository.find()
+  async findById (request: Request, response: Response, next: NextFunction) {
+    return this.ArticleRepository.findOne(request.query)
   }
 
   async remove(request: Request, response: Response, next: NextFunction) {

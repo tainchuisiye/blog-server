@@ -23,7 +23,8 @@
       "typeorm": "0.2.8"
    },
    "scripts": {
-      "start": "ts-node src/index.ts",
+      "start-old": "ts-node src/index.ts",
+      "start": "ts-node-dev --respawn --transpileOnly src/index.ts",
       "TODO-start": "nodemon  ./bin/www"
    }
 }
