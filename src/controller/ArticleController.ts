@@ -17,7 +17,7 @@ export class ArticleController {
     return this.ArticleRepository.findOne(request.query)
   }
 
-  async remove(request: Request, response: Response, next: NextFunction) {
+  async removeById(request: Request, response: Response, next: NextFunction) {
     let userToRemove = await this.ArticleRepository.findOne(request.params.id)
     await this.ArticleRepository.remove(userToRemove)
 

@@ -20,8 +20,8 @@ export default [
     action: "findById"
   },
   {
-    method: "delete",
-    route: "/users",
+    method: "get",
+    route: "/article/deleteById",
     controller: ArticleController,
     action: "removeById"
   }
